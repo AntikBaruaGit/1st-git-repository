@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+.headingName {
+  display: grid;
+  color: white;
+  justify-content: center;
+}
+
+.headingName > p {
+  font-size: 500%;
+  font-weight: 900;
+}
+
+.items1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  justify-items: center;
+}
+
+.result {
+  margin-top: 20px;
+  color: white;
+  display: grid;
+  font-size: 300%;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.result1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.resultWon,
+.resultLoss,
+.resultTie {
+  color: red;
+  grid-row: 2;
+}
+
+@media (max-width: 600px) {
+  .headingName {
+    display: grid;
+    color: white;
+    justify-content: center;
+  }
+
+  .headingName > p {
+    font-size: 250%;
+    font-weight: 900;
+  }
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .result {
+    margin-top: 20px;
+    color: white;
+    display: grid;
+    font-size: 200%;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
