@@ -44,8 +44,33 @@ img {
 .resultWon,
 .resultLoss,
 .resultTie {
-  color: red;
+  color: white;
   grid-row: 2;
+}
+
+.colorRed {
+  color: red;
+}
+
+.colorYellow {
+  color: yellow;
+}
+
+.resetS {
+  display: grid;
+  margin-top: 20px;
+}
+
+.resetB {
+  background-color: yellow;
+  color: red;
+  font-weight: 900;
+  font-size: 100%;
+  justify-self: center;
+  max-width: fit-content;
+  border: 5px outset gray;
+  border-radius: 50%;
+  padding: 30px;
 }
 
 @media (max-width: 600px) {
